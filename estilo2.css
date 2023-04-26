@@ -1,0 +1,313 @@
+*{
+	font-family: 'Poppins', sans-serif;
+	
+}
+body{
+	background: #F3F5FC;
+	font-weight: 200;
+
+}
+label{
+	font-size: 9px;
+	color: #495057;
+	display: block;
+	user-select: none;
+}
+.foto{
+	margin-top: 5px;
+	user-select: none;
+}
+.container{
+	display: grid;
+	grid-template-columns: 70% 25%;
+	grid-template-rows: 60% 35%;
+	justify-items: center;
+}
+/*TEXTOS*/
+.texto-incriptado{
+	resize: none;
+	width: 477px;
+	height: 400px;
+	color: #0A3871;
+	border:none;
+	background: #F3F5FC;
+	font-size: 30px;
+}
+.resultado-incriptado{
+	width: 270px;
+	height: 390px;
+	resize: none;
+	color: #495057;
+	padding: 10px;
+	background-image: url("1.png");
+	background-repeat: no-repeat;
+	background-position: -14px;
+	background-size: 320px;
+	border-radius: 10px;
+	border:none;
+	font-size: 20px;
+}
+textarea:focus{
+	outline:none;
+}
+/*BOTONES*/
+.boton-encriptar{
+	border: 1px solid #0A3871;
+	color: #FFFFFF;
+	background: #0A3871;
+	border-radius: 100px;
+	width: 260px;
+	height: 67px;
+	cursor: pointer;
+	font-size: 20px
+}
+.boton-desencriptar{
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	background: #D8DFE8;
+	border-radius: 100px;
+	width: 260px;
+	height: 67px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-left: 5px;
+}
+#primerbtn{
+	margin-bottom: 5px;
+}
+.boton-copiar{
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	background: transparent;
+	border-radius: 100px;
+	width: 260px;
+	height: 67px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-size: 20px
+
+}
+.boton-copiar:hover{
+	border: 1px solid #0A3871;
+	color: #fff;
+	background: #0A3871;
+
+}
+button:hover{
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	background: #fff;
+	transition: .2s all;
+}
+/*TABLETS*/
+
+@media screen and (min-width: 700px) and (max-width:870px ){
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 53% 47%;
+	justify-items: center;
+}
+.span {
+	display: grid;
+	justify-self: center;
+}
+#primerbtn{
+	padding-left: 20px;
+}
+.texto-incriptado{
+	resize: none;
+	width: 100%;
+	height: 300px;
+	color: #0A3871;
+	border:none;
+	background: #F3F5FC;
+	font-size: 20px;
+}
+.boton-encriptar{
+	border: 1px solid #0A3871;
+	color: #FFFFFF;
+	background: #0A3871;
+	border-radius: 100px;
+	width: 330px;
+	height: 77px;
+	cursor: pointer;
+	font-size: 20px;
+	padding-left: 6px!important;
+}
+.boton-desencriptar{
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	background: #D8DFE8;
+	border-radius: 100px;
+	width: 330px;
+	height: 77px;
+	cursor: pointer;
+	font-size: 20px
+}
+.resultado-incriptado{
+	width: 640px;
+	height: 350px;
+	resize: none;
+	color: #495057;
+	background-image: url("2.png");
+	background-repeat: no-repeat;
+	background-size: 700px;
+	border-radius: 10px;
+	border:none;
+	font-size: 20px;
+}
+.boton-copiar{
+	border: 1px solid #0A3871;
+	color: #0A3871;
+	background: transparent;
+	border-radius: 100px;
+	width: 360px;
+	height: 67px;
+	justify-self: center;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+	bottom: 80px;
+	}
+}
+/*CELULARES*/
+@media only screen and (min-width: 500px) and (max-width:700px ){
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 53% 47%;
+	justify-items: center;
+}
+.span {
+	display: grid;
+	justify-self: center;
+}
+.texto-incriptado{
+	width: 400px;
+	height: 300px;
+}
+.boton-encriptar{
+	width: 230px;
+}
+.boton-desencriptar{
+	width: 230px;
+	height: 67px;
+}
+.resultado-incriptado{
+	width: 470px;
+	height: 350px;
+	background-image: url("2.png");
+	background-repeat: no-repeat;
+	background-size: 500px;
+}
+.boton-copiar{
+	width: 230px;
+	height: 67px;
+	justify-self: center;
+	position: relative;
+	bottom: 80px;
+	}
+}
+/*CELULARES PEQUEÑOS*/
+@media only screen and (min-width: 300px) and (max-width:500px ){
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 53% 47%;
+	justify-items: center;
+}
+.span {
+	display: grid;
+	justify-self: center;
+}
+.texto-incriptado{
+	width: 300px;
+	height: 300px;
+	font-size: 20px;
+}
+.botones{
+	display: flex;
+	justify-content: center;
+}
+.boton-encriptar{
+	height: 45px;
+	width: 130px;
+	font-size: 15px;
+	text-align: center;
+}
+.boton-desencriptar{
+	height: 45px;
+	width: 130px;
+	font-size: 15px;
+	padding: 5;
+}
+#primerbtn{
+	text-align: center;
+}
+.resultado-incriptado{
+	width: 300px;
+	height: 350px;
+	background-image: url("2.png");
+	background-repeat: no-repeat;
+	background-size: 350px;
+}
+.boton-copiar{
+	font-size: 15px;
+	width: 130px;
+	height: 47px;
+	justify-self: center;
+	position: relative;
+	bottom: 80px;
+	}
+}
+/*CELULARES PEQUEÑOS*/
+@media only screen and (min-width: 100px) and (max-width:330px ){
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 53% 47%;
+	justify-items: center;
+}
+.span {
+	display: grid;
+	justify-self: center;
+}
+label{
+	font-size: 7px;
+}
+.texto-incriptado{
+	width: 200px;
+	height: 300px;
+}
+.botones{
+	display: flex;
+	justify-content: center;
+}
+.boton-encriptar{
+	width: 90px;
+	font-size: 8px;
+	height: 37px;
+	margin-right: 3%;
+}
+.boton-desencriptar{
+	width: 90px;
+	height: 37px;
+	font-size: 8px;
+}
+.resultado-incriptado{
+	width: 200px;
+	height: 350px;
+	background-image: url("2.png");
+	background-repeat: no-repeat;
+	background-size: 250px;
+}
+.boton-copiar{
+	font-size: 8px;
+	width: 80px;
+	height: 37px;
+	justify-self: center;
+	position: relative;
+	bottom: 80px;
+	}
+}

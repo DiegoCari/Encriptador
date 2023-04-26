@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" items="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="viewport" items="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Encriptador</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+<header>
+	<img src="Logo.png" alt="logo de alura" class="foto">
+</header>
+
+<main class="container">
+
+		<section class="contenedor-main">
+			<textarea class="texto-incriptado" placeholder="Ingrese Texto" maxlength="100"></textarea>
+			<label id="primerbtn">Solo minusculas, sin acentos y maximo 100 caracteres!</label>
+				<div class="botones">
+					<button class="boton-encriptar" onclick="btnEncriptar()" id="primerbtn">Encriptar</button>
+					<button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+				</div>
+		</section>
+
+		<div class="span">
+				<textarea class="resultado-incriptado" readonly="" maxlength="150"></textarea>
+				<button class="boton-copiar" onclick="copiar()">Copiar</button>	
+		</div>
+			
+</main>
+
+<script type="text/javascript" src="codigod.js"></script>
+</body>	
+</html>
